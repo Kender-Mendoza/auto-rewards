@@ -2,6 +2,10 @@
 # You need to add permissions
 import pyautogui
 import time
+from request_sentences import request_sentences
+
+NAVIGATOR = "brave"
+SEARCH_ENGINE_URL = "https://www.bing.com/search?q=hi"
 
 def main():
     # ? Open app using raycast.
@@ -9,7 +13,7 @@ def main():
     pyautogui.press("space")
     time.sleep(2)
     pyautogui.keyUp("command")
-    pyautogui.typewrite('brave')
+    pyautogui.typewrite(NAVIGATOR)
     pyautogui.press("enter")
 
     # ? Open new browser tab.
@@ -19,20 +23,17 @@ def main():
     pyautogui.keyUp("command")
 
     # ? Write in broser bar
-    pyautogui.typewrite('https://www.bing.com/search?q=hi')
+    pyautogui.typewrite(SEARCH_ENGINE_URL)
     pyautogui.press("enter")
     time.sleep(2)
 
-    sentences = [
-        'primera prueba',
-        'segunda prueba'
-    ]
+    sentences = request_sentences()
 
     # ? Write in search engine bar
     for val in sentences:
         pyautogui.typewrite(val)
         pyautogui.press("enter")
-        time.sleep(2)
+        time.sleep(5)
 
 if __name__ == "__main__":
     main()
