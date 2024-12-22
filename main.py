@@ -2,10 +2,9 @@
 # You need to add permissions
 import pyautogui
 import time
-from request_sentences import request_sentences
+from build_sentences import BuildSentences
 
 NAVIGATOR = "brave"
-SEARCH_ENGINE_URL = "https://www.bing.com/search?q=hi"
 
 def main():
     # ? Open app using raycast.
@@ -23,11 +22,11 @@ def main():
     pyautogui.keyUp("command")
 
     # ? Write in broser bar
-    pyautogui.typewrite(SEARCH_ENGINE_URL)
+    pyautogui.typewrite("https://www.bing.com")
     pyautogui.press("enter")
     time.sleep(2)
 
-    sentences = request_sentences()
+    sentences = BuildSentences().call()
 
     # ? Write in search engine bar
     for val in sentences:
