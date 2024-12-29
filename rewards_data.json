@@ -1,0 +1,59 @@
+{
+    "name": "Hi Kender",
+    "level": "Level 1",
+    "available_points": "170",
+    "todays_points": "40",
+    "streak_count": "0",
+    "daily_set": [
+        {
+            "card_number": 1,
+            "points?": true,
+            "points": [
+                "5"
+            ],
+            "available_points": false
+        },
+        {
+            "card_number": 2,
+            "points?": true,
+            "points": [
+                "5"
+            ],
+            "available_points": false
+        },
+        {
+            "card_number": 3,
+            "points?": true,
+            "points": [
+                "5"
+            ],
+            "available_points": true
+        }
+    ],
+    "more_activities": [
+        {
+            "card_number": 1,
+            "points?": false,
+            "points": 0,
+            "available_points": false
+        },
+        {
+            "card_number": 2,
+            "points?": false,
+            "points": 0,
+            "available_points": false
+        },
+        {
+            "card_number": 3,
+            "points?": false,
+            "points": 0,
+            "available_points": false
+        },
+        {
+            "card_number": 4,
+            "points?": false,
+            "points": 0,
+            "available_points": false
+        }
+    ]
+}
